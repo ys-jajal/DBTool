@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D7C3BE9-7567-47FB-80DB-88D6EB407F6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Desing.My.MyApplication</StartupObject>
+    <RootNamespace>Desing</RootNamespace>
+    <AssemblyName>Desing</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Desing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Desing.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeFile1.vb" />
+    <Compile Include="DBTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBTool.Designer.vb">
+      <DependentUpon>DBTool.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="designview.Designer.vb">
+      <DependentUpon>designview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="designview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form1.Designer.vb">
+      <DependentUpon>form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="oledb120class.vb" />
+    <Compile Include="oledb40class.vb" />
+    <Compile Include="openform.Designer.vb">
+      <DependentUpon>openform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="openform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openform2.Designer.vb">
+      <DependentUpon>openform2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="openform2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OracleClass1.vb" />
+    <Compile Include="queryform.Designer.vb">
+      <DependentUpon>queryform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="queryform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sqlclass.vb" />
+    <Compile Include="Startup.Designer.vb">
+      <DependentUpon>Startup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DBTool.resx">
+      <DependentUpon>DBTool.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="designview.resx">
+      <DependentUpon>designview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form1.resx">
+      <DependentUpon>form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openform.resx">
+      <DependentUpon>openform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openform2.resx">
+      <DependentUpon>openform2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="queryform.resx">
+      <DependentUpon>queryform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5952066.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1206557186603844069mcol_cross.svg.hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clsc0n1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clsc0n.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table Column Drop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjaxLoadingIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startup.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Open1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seperetor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formbck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubck1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1217861754507811278mightyman_Button_Icons_3.svg.med.png" />
+    <Content Include="Resources\abstract-background-14.jpg" />
+    <Content Include="Resources\Anititle.gif" />
+    <Content Include="Resources\bck.jpg" />
+    <Content Include="Resources\bckimg.png" />
+    <Content Include="Resources\business_ppt_background.jpg" />
+    <None Include="Resources\Button-Refresh-icon.png" />
+    <None Include="Resources\close.png" />
+    <Content Include="Resources\cog-icon-2-48x48.png" />
+    <None Include="Resources\count.jpg" />
+    <None Include="Resources\db.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\exit.JPG" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\help12.png" />
+    <None Include="help.chm" />
+    <None Include="Resources\help_256.png" />
+    <None Include="Resources\ip_icon_03_ButtonDown.png" />
+    <None Include="Resources\ip_icon_03_ButtonDown - Copy.png" />
+    <Content Include="Resources\loader64.gif" />
+    <Content Include="Resources\loading.gif" />
+    <Content Include="Resources\MP900439214.JPG" />
+    <Content Include="Resources\newopen.png" />
+    <Content Include="Resources\open1.png" />
+    <None Include="Resources\print_printer.png" />
+    <None Include="Resources\query_runner-icon.gif" />
+    <Content Include="Resources\run.png" />
+    <None Include="Resources\ShutDown.png" />
+    <Content Include="Resources\simplebckgrnd.png" />
+    <Content Include="Resources\startup.png" />
+    <Content Include="Resources\stock-photo-exit-button-19354102.jpg" />
+    <Content Include="Resources\stock-vector-exit-button-35366032.jpg" />
+    <Content Include="Resources\titleani.JPG" />
+    <Content Include="Resources\tools1.png" />
+    <Content Include="Resources\tugu_1293180262365.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
